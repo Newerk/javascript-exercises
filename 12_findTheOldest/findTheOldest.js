@@ -1,7 +1,7 @@
 const findTheOldest = function(people) {
-    for (const iterator of people) {
-        addDeathYear(people);
+    addDeathYear(people);
 
+    for (const iterator of people) {
         if((iterator.yearOfDeath-iterator.yearOfBirth) === getOldestAge(people)){
             return iterator;
     }
